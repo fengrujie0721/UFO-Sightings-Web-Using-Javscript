@@ -1,9 +1,12 @@
-
+// get a reference to the table body
 var tbody = d3.select("tbody");
-
+// loop through data
 data.forEach((ufoReport) => {
+  // use D3 to append a table row tr for each uforeport
   var row = tbody.append("tr");
+  // use object entries to get key and value
   Object.entries(ufoReport).forEach(([key, value]) => {
+    // use D3 to append  a cell td for each uforeport
     var cell = row.append("td");
     cell.text(value);
   });
