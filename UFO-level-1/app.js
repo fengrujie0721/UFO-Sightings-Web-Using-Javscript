@@ -8,6 +8,7 @@ data.forEach((ufoReport) => {
   Object.entries(ufoReport).forEach(([key, value]) => {
     // use D3 to append  a cell td for each uforeport
     var cell = row.append("td");
+    // update each cell's text with value
     cell.text(value);
   });
 });
