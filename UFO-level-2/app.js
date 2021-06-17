@@ -20,7 +20,7 @@ function runEnter(){
     var country=d3.select("#country").property("value");
     var shape=d3.select("#shape").property("value");
     
-    var filteredData=tableData.filter(ufo=>ufo.datetime === date||ufo.city===city||ufo.state===state||ufo.country===country||ufo.shape===shape);
+    var filteredData=tableData.filter(ufo=>ufo.datetime === date&&ufo.city===city&&ufo.state===state&&ufo.country===country&&ufo.shape===shape);
     console.log(filteredData);
     var list =d3.select("tbody");
     list.html("");
