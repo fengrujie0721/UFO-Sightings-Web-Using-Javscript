@@ -1,10 +1,14 @@
-
+// use D3 to get a reference to the table body
 var tbody = d3.select("tbody");
-
+// loop through data
 data.forEach((ufoReport) => {
+  // use D3 to append a table row tr for each uforeport
   var row = tbody.append("tr");
+  // use object.entriest to get key and value for each uforeport
   Object.entries(ufoReport).forEach(([key, value]) => {
+    // use D3 to append a cell per each value
     var cell = row.append("td");
+    // use D3 to update each cell's text with value
     cell.text(value);
   });
 });
