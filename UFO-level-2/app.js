@@ -41,7 +41,7 @@ function runEnter(){
     var row=list.append("tr");
     // use object.entries to get key and value for each uforeport
     Object.entries(ufoReport).forEach(([key,value])=>{
-      // use D3 to append a cell td for each uforeport value
+      // use D3 to append a cell td per each uforeport value
         var cell=row.append("td");
         // update each cell's text with value
         cell.text(value);
