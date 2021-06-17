@@ -19,3 +19,18 @@ Use a date form in your HTML document and write JavaScript code that will listen
 
 
 ![image](https://user-images.githubusercontent.com/79819331/122472011-00c2bc80-cf8e-11eb-9739-e7fbdf304e31.png)
+
+
+Using multiple input tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
+
+date/time
+city
+state
+country
+shape
+
+
+
+
+![image](https://user-images.githubusercontent.com/79819331/122472177-38c9ff80-cf8e-11eb-89a2-3ca6a08d869a.png)
+
