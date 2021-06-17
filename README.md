@@ -15,7 +15,7 @@ Make sure to have a column for date/time, city, state, country, shape, and comme
 
 
 
-Use a date form in your HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
+Use a date form in HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
 
 
 ![image](https://user-images.githubusercontent.com/79819331/122472011-00c2bc80-cf8e-11eb-9739-e7fbdf304e31.png)
