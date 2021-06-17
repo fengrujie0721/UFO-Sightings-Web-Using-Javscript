@@ -6,7 +6,12 @@ Write code that will create a table dynamically based upon a dataset. Allow user
 
 Write code that appends UFO datasheet table to web page and then adds new rows of data for each UFO sighting.
 
-Make sure tohave a column for date/time, city, state, country, shape, and comment at the very least.
+Make sure to have a column for date/time, city, state, country, shape, and comment at the very least.
+
+
+
+![image](https://user-images.githubusercontent.com/79819331/122471882-d113b480-cf8d-11eb-9056-6881c253d341.png)
+
 
 
 
