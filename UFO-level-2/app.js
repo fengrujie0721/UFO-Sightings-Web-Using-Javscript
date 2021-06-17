@@ -12,26 +12,38 @@ data.forEach((ufoReport) => {
     cell.text(value);
   });
 });
+// assign the data to a variable
 var tableData=data;
+// select the button
 var button=d3.select("#filter-btn");
+// create event handlers
 button.on("click",runEnter);
+// define function
 function runEnter(){
+  // prevent the page from refreshing
     d3.event.preventDefault();
-    
+    // get the value of the input element
     var date=d3.select("#datetime").property("value");
     var city=d3.select("#city").property("value");
     var state=d3.select("#state").property("value");
     var country=d3.select("#country").property("value");
     var shape=d3.select("#shape").property("value");
-    
+    // filter the data
     var filteredData=tableData.filter(ufo=>ufo.datetime === date&&ufo.city===city&&ufo.state===state&&ufo.country===country&&ufo.shape===shape);
     console.log(filteredData);
+    // use D3 to get a reference to the table body
     var list =d3.select("tbody");
+    // remove any children from the list
     list.html("");
+    // loop through filtered data
     filteredData.forEach((ufoReport)=>{
+    // use D3 to append a table row tr for each uforeport
     var row=list.append("tr");
+    // use object.entries to get key and value for each uforeport
     Object.entries(ufoReport).forEach(([key,value])=>{
+      // use D3 to append a cell td for each uforeport value
         var cell=row.append("td");
+        // update each cell's text with value
         cell.text(value);
     });
 });
